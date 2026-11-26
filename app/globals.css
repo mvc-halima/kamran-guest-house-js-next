@@ -355,42 +355,45 @@ section > p {
 }
 
 /* FOOTER */
-
+ 
 footer {
-  background: #102d28;
+  background: #1F4E79;
   color: var(--white);
-  padding: 60px 7% 25px;
+  padding: 30px 7% 15px;
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
-  gap: 40px;
+  gap: 25px;
+  align-items: start;
 }
 
 footer h3 {
   font-family: 'Playfair Display', serif;
-  color: var(--gold);
-  font-size: 20px;
-  margin-bottom: 15px;
+  color: var(--white);
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 footer p,
 footer a {
-  color: #d5ded9;
-  font-size: 14px;
+  color: #e8eef5;
+  font-size: 13px;
+  line-height: 1.6;
 }
 
 footer a {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
 
 footer a:hover {
-  color: var(--gold);
+  color: #c49a5a;
 }
 
 footer > p {
   grid-column: 1 / -1;
-  border-top: 1px solid #36534c;
-  padding-top: 20px;
+  border-top: 1px solid #52769a;
+  padding-top: 12px;
+  margin: 0;
   text-align: center;
 }
 
