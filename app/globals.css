@@ -4,6 +4,8 @@
 :root {
  
 :root {
+ 
+:root {
   --green: #1F4E79;
   --green-light: #2D6494;
   --blue: #1F4E79;
@@ -15,6 +17,7 @@
   --gray: #777777;
   --border: #e8e2d7;
 }
+
 
 
 * {
