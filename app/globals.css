@@ -2,8 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
 
 :root {
-  --green: #173b35;
-  --green-light: #244c44;
+ 
+:root {
+  --green: #1F4E79;
+  --green-light: #2D6494;
+  --blue: #1F4E79;
+  --blue-light: #2D6494;
   --cream: #f8f5ef;
   --gold: #c49a5a;
   --white: #ffffff;
@@ -11,6 +15,7 @@
   --gray: #777777;
   --border: #e8e2d7;
 }
+
 
 * {
   margin: 0;
