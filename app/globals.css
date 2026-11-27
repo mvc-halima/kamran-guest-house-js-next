@@ -474,30 +474,30 @@ section > p {
 footer {
   background: var(--blue);
   color: var(--white);
-  padding: 30px 7% 15px;
+  padding: 18px 7% 8px;
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
-  gap: 25px;
+  gap: 15px;
   align-items: start;
 }
 
 footer h3 {
   font-family: 'Playfair Display', serif;
   color: var(--white);
-  font-size: 18px;
-  margin-bottom: 10px;
+  font-size: 17px;
+  margin-bottom: 6px;
 }
 
 footer p,
 footer a {
   color: #e8eef5;
-  font-size: 13px;
-  line-height: 1.6;
+  font-size: 12px;
+  line-height: 1.4;
 }
 
 footer a {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 footer a:hover {
@@ -507,114 +507,7 @@ footer a:hover {
 footer > p {
   grid-column: 1 / -1;
   border-top: 1px solid #52769a;
-  padding-top: 12px;
+  padding-top: 7px;
   margin: 0;
   text-align: center;
-}
-
-/* TABLET RESPONSIVE */
-
-@media (max-width: 900px) {
-  .header {
-    flex-wrap: wrap;
-  }
-
-  .header nav {
-    order: 3;
-    width: 100%;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .hero {
-    height: 550px;
-    min-height: 550px;
-    padding: 0 6%;
-  }
-
-  .room-list,
-  .facility-list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* MOBILE RESPONSIVE */
-
-@media (max-width: 600px) {
-  .header {
-    padding: 18px 5%;
-  }
-
-  .logo {
-    font-size: 18px;
-  }
-
-  .header nav {
-    justify-content: flex-start;
-  }
-
-  .header nav a {
-    padding: 8px 11px;
-    font-size: 13px;
-  }
-
-  section:not(.hero) {
-    padding: 60px 5%;
-  }
-
-  .hero {
-    height: 500px;
-    min-height: 500px;
-    padding: 0 5%;
-  }
-
-  .hero h1 {
-    font-size: 40px;
-  }
-
-  .hero p {
-    font-size: 15px;
-  }
-
-  .room-list,
-  .facility-list,
-  .gallery-list {
-    grid-template-columns: 1fr;
-  }
-
-  .gallery-list img {
-    height: 230px;
-  }
-
-  .booking form {
-    grid-template-columns: 1fr;
-    padding: 22px;
-  }
-
-  .booking button {
-    grid-column: 1;
-  }
-
-  footer {
-    grid-template-columns: 1fr;
-    padding: 25px 5% 12px;
-    gap: 18px;
-  }
-
-  footer > p {
-    grid-column: 1;
-  }
-}
-
-/* ACCESSIBILITY: REDUCED MOTION */
-
-@media (prefers-reduced-motion: reduce) {
-  .hero-slide {
-    animation: none;
-  }
-
-  .slide-one {
-    opacity: 1;
-  }
 }
