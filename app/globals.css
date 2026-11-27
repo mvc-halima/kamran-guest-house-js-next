@@ -176,6 +176,7 @@ select {
     rgba(8, 25, 42, 0.12)
   );
   z-index: 2;
+  pointer-events: none ;
 }
 
 /* SLIDESHOW ANIMATION */
