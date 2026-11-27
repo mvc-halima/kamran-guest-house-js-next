@@ -20,22 +20,45 @@ export default function Home() {
       </header>
 
       {/* Hero */}
-      <section className="hero" id="home">
-        <div className="hero-content">
-          <h1>Experience Comfort <br />& Hospitality</h1>
-          <p>
-            Enjoy a comfortable and relaxing stay in the heart of Mirpur, AJK.
-          </p>
-          <a href="#rooms" className="book-button">
-            Explore Our Rooms
-          </a>
-        </div>
+     
+<section className="hero" id="home">
 
-        <img
-          src="https://images.unsplash.com/photo-1611892440504-42a792e24d32"
-          alt="Comfortable Guest House Room"
-        />
-      </section>
+  <div className="hero-slideshow">
+    <img
+      className="hero-slide slide-one"
+      src="https://images.unsplash.com/photo-1611892440504-42a792e24d32"
+      alt="Luxury guest house room"
+    />
+
+    <img
+      className="hero-slide slide-two"
+      src="https://images.unsplash.com/photo-1566073771259-6a8506099945"
+      alt="Luxury hotel swimming pool"
+    />
+
+    <img
+      className="hero-slide slide-three"
+      src="https://images.unsplash.com/photo-1571896349842-33c89424de2d"
+      alt="Beautiful hotel interior"
+    />
+  </div>
+
+  <div className="hero-content">
+    <h1>
+      Experience Comfort <br />& Hospitality
+    </h1>
+
+    <p>
+      Enjoy a comfortable and relaxing stay in the heart of Mirpur, AJK.
+    </p>
+
+    <a href="#rooms" className="book-button">
+      Explore Our Rooms
+    </a>
+  </div>
+
+</section>
+
 
       {/* About */}
       <section className="about" id="about">
