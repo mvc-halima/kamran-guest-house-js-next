@@ -48,8 +48,8 @@ select {
   width: 100%;
   min-height: 90px;
   padding: 18px 7%;
-  background: var(--blue);
-  color: var(--white);
+  background: #1F4E79;
+  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -67,20 +67,32 @@ select {
 .header nav {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 12px;
 }
+
+/* GLASSY NAVIGATION BUTTONS */
 
 .header nav a {
   font-size: 14px;
-  color: var(--white);
-  transition: color 0.3s ease;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 9px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+  background: rgba(45, 100, 148, 0.35);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
 }
 
 .header nav a:hover {
-  color: var(--gold);
+  background: rgba(255, 255, 255, 0.22);
+  border-color: rgba(255, 255, 255, 0.7);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* GLASS BUTTON */
+/* BOOK YOUR STAY BUTTON */
 
 .book-button {
   display: inline-block;
@@ -425,7 +437,7 @@ footer > p {
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 10px;
   }
 
   .hero {
@@ -454,6 +466,11 @@ footer > p {
 
   .header nav {
     justify-content: flex-start;
+  }
+
+  .header nav a {
+    padding: 8px 11px;
+    font-size: 13px;
   }
 
   section {
