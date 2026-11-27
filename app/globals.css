@@ -48,8 +48,8 @@ select {
   width: 100%;
   min-height: 90px;
   padding: 18px 7%;
-  background: var(--white);
-  color: var(--dark);
+  background: var(--blue);
+  color: var(--white);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -61,7 +61,7 @@ select {
   font-size: 22px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: var(--blue);
+  color: var(--white);
 }
 
 .header nav {
@@ -72,30 +72,34 @@ select {
 
 .header nav a {
   font-size: 14px;
-  color: var(--dark);
+  color: var(--white);
   transition: color 0.3s ease;
 }
 
 .header nav a:hover {
-  color: var(--blue);
+  color: var(--gold);
 }
 
-/* BUTTONS */
+/* GLASS BUTTON */
 
 .book-button {
   display: inline-block;
-  background: var(--gold);
-  color: var(--dark);
+  background: rgba(255, 255, 255, 0.13);
+  color: var(--white);
   padding: 12px 23px;
   font-size: 14px;
   font-weight: 700;
-  border: 1px solid var(--gold);
-  transition: 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 8px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
 }
 
 .book-button:hover {
-  background: transparent;
-  color: var(--blue);
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
 }
 
 /* HERO */
@@ -103,17 +107,21 @@ select {
 .hero {
   min-height: 570px;
   padding: 75px 7%;
-  background: var(--blue);
+  background: var(--cream);
   color: var(--white);
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 55px;
+  overflow: hidden;
+  position: relative;
 }
 
 .hero-content {
   flex: 1;
   max-width: 570px;
+  position: relative;
+  z-index: 2;
 }
 
 .hero h1 {
@@ -121,10 +129,11 @@ select {
   font-size: clamp(42px, 5vw, 65px);
   line-height: 1.2;
   margin-bottom: 22px;
+  color: var(--blue);
 }
 
 .hero p {
-  color: #e2e7e3;
+  color: var(--gray);
   font-size: 16px;
   margin-bottom: 30px;
   max-width: 470px;
@@ -134,9 +143,21 @@ select {
   width: 48%;
   height: 390px;
   object-fit: cover;
+  border-radius: 10px;
+  animation: gentleZoom 18s ease-in-out infinite alternate;
+  transform-origin: center;
 }
 
-/* COMMON SECTION STYLES */
+@keyframes gentleZoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.07);
+  }
+}
+
+/* COMMON SECTIONS */
 
 section {
   padding: 90px 7%;
@@ -187,7 +208,7 @@ section > p {
 /* ROOMS */
 
 .rooms {
-  background: #ffffff;
+  background: var(--white);
   text-align: center;
 }
 
@@ -474,5 +495,11 @@ footer > p {
 
   footer > p {
     grid-column: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero img {
+    animation: none;
   }
 }
