@@ -691,3 +691,53 @@ footer .copyright {
     opacity: 1;
   }
 }
+
+/* FORCE BOOKING SECTION TO BE SHORTER */
+
+section.booking#booking {
+  padding: 20px 7% !important;
+  margin: 0 !important;
+  min-height: 0 !important;
+  height: auto !important;
+}
+
+/* Reduce space around booking heading */
+
+section.booking#booking h2 {
+  margin-bottom: 5px !important;
+}
+
+section.booking#booking > p {
+  margin-bottom: 8px !important;
+}
+
+/* Make booking form compact */
+
+section.booking#booking form {
+  margin: 10px auto 0 !important;
+  padding: 12px !important;
+  gap: 5px 12px !important;
+}
+
+/* Reduce input height */
+
+section.booking#booking input,
+section.booking#booking select {
+  padding: 7px !important;
+  margin-bottom: 3px !important;
+  min-height: 35px;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  section.booking#booking {
+    padding: 18px 5% !important;
+  }
+
+  section.booking#booking form {
+    padding: 12px !important;
+    gap: 5px !important;
+  }
+}
+
