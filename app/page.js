@@ -21,41 +21,18 @@ export default function Home() {
         </a>
       </header>
 
-      {/* Hero Section with 3 Image Slideshow */}
+      {/* Hero */}
       <section className="hero" id="home">
         <div className="hero-slideshow">
-          <img
-            className="hero-slide slide-one"
-            src="https://images.unsplash.com/photo-1611892440504-42a792e24d32"
-            alt="Luxury guest house room"
-          />
-
-          <img
-            className="hero-slide slide-two"
-            src="https://images.unsplash.com/photo-1566073771259-6a8506099945"
-            alt="Luxury hotel swimming pool"
-          />
-
-          <img
-            className="hero-slide slide-three"
-            src="https://images.unsplash.com/photo-1571896349842-33c89424de2d"
-            alt="Beautiful hotel interior"
-          />
+          <img className="hero-slide slide-one" src="https://images.unsplash.com/photo-1611892440504-42a792e24d32" alt="Luxury guest house room" />
+          <img className="hero-slide slide-two" src="https://images.unsplash.com/photo-1566073771259-6a8506099945" alt="Luxury hotel swimming pool" />
+          <img className="hero-slide slide-three" src="https://images.unsplash.com/photo-1571896349842-33c89424de2d" alt="Beautiful hotel interior" />
         </div>
 
         <div className="hero-content">
-          <h1>
-            Experience Comfort <br />
-            & Hospitality
-          </h1>
-
-          <p>
-            Enjoy a comfortable and relaxing stay in the heart of Mirpur, AJK.
-          </p>
-
-          <a href="#rooms" className="book-button">
-            Explore Our Rooms
-          </a>
+          <h1>Experience Comfort <br />& Hospitality</h1>
+          <p>Enjoy a comfortable and relaxing stay in the heart of Mirpur, AJK.</p>
+          <a href="#rooms" className="book-button">Explore Our Rooms</a>
         </div>
       </section>
 
@@ -63,14 +40,8 @@ export default function Home() {
       <section className="about" id="about">
         <p className="section-label">ABOUT US</p>
         <h2>Welcome to Kamran Guest House</h2>
-        <p>
-          Experience comfort, convenience and warm hospitality at
-          Kamran Guest House in Mirpur, Azad Kashmir.
-        </p>
-        <p>
-          Our aim is to provide guests with a relaxing environment
-          and a comfortable accommodation experience.
-        </p>
+        <p>Experience comfort, convenience and warm hospitality at Kamran Guest House in Mirpur, Azad Kashmir.</p>
+        <p>Our aim is to provide guests with a relaxing environment and a comfortable accommodation experience.</p>
         <a href="#rooms">Discover Our Rooms</a>
       </section>
 
@@ -82,30 +53,21 @@ export default function Home() {
 
         <div className="room-list">
           <div className="room-card">
-            <img
-              src="https://images.unsplash.com/photo-1611892440504-42a792e24d32"
-              alt="Deluxe Room"
-            />
+            <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32" alt="Deluxe Room" />
             <h3>Deluxe Room</h3>
             <p>A stylish and comfortable room for a relaxing stay.</p>
             <a href="#booking">Book Now</a>
           </div>
 
           <div className="room-card">
-            <img
-              src="https://images.unsplash.com/photo-1590490360182-c33d57733427"
-              alt="Luxury Room"
-            />
+            <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427" alt="Luxury Room" />
             <h3>Luxury Room</h3>
             <p>Enjoy extra comfort in a beautifully designed space.</p>
             <a href="#booking">Book Now</a>
           </div>
 
           <div className="room-card">
-            <img
-              src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0"
-              alt="Family Room"
-            />
+            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0" alt="Family Room" />
             <h3>Family Room</h3>
             <p>A spacious option for families and group stays.</p>
             <a href="#booking">Book Now</a>
@@ -120,35 +82,12 @@ export default function Home() {
         <p>Everything you need for a comfortable stay.</p>
 
         <div className="facility-list">
-          <div>
-            <h3>Free Wi-Fi</h3>
-            <p>Stay connected throughout your visit.</p>
-          </div>
-
-          <div>
-            <h3>Parking</h3>
-            <p>Convenient parking for guests.</p>
-          </div>
-
-          <div>
-            <h3>Air Conditioning</h3>
-            <p>Relax in a comfortable environment.</p>
-          </div>
-
-          <div>
-            <h3>Room Service</h3>
-            <p>Enjoy convenient service during your stay.</p>
-          </div>
-
-          <div>
-            <h3>Security</h3>
-            <p>A welcoming and secure environment.</p>
-          </div>
-
-          <div>
-            <h3>Smart Entertainment</h3>
-            <p>Enjoy entertainment in your room.</p>
-          </div>
+          <div><h3>Free Wi-Fi</h3><p>Stay connected throughout your visit.</p></div>
+          <div><h3>Parking</h3><p>Convenient parking for guests.</p></div>
+          <div><h3>Air Conditioning</h3><p>Relax in a comfortable environment.</p></div>
+          <div><h3>Room Service</h3><p>Enjoy convenient service during your stay.</p></div>
+          <div><h3>Security</h3><p>A welcoming and secure environment.</p></div>
+          <div><h3>Smart Entertainment</h3><p>Enjoy entertainment in your room.</p></div>
         </div>
       </section>
 
@@ -159,40 +98,20 @@ export default function Home() {
         <p>Take a look at the comfort and experience we offer.</p>
 
         <div className="gallery-list">
-          <img
-            src="https://images.unsplash.com/photo-1566073771259-6a8506099945"
-            alt="Hotel Exterior"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1611892440504-42a792e24d32"
-            alt="Guest Room"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1571896349842-33c89424de2d"
-            alt="Swimming Pool"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1590490360182-c33d57733427"
-            alt="Luxury Bedroom"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0"
-            alt="Interior"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1601918774946-25832a4be0d6"
-            alt="Hotel Interior"
-          />
+          <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945" alt="Hotel Exterior" />
+          <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32" alt="Guest Room" />
+          <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d" alt="Swimming Pool" />
+          <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427" alt="Luxury Bedroom" />
+          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0" alt="Interior" />
+          <img src="https://images.unsplash.com/photo-1601918774946-25832a4be0d6" alt="Hotel Interior" />
         </div>
       </section>
 
-      {/* Booking */}
+      {/* Separate Booking Section */}
       <section className="booking" id="booking">
         <p className="section-label">RESERVE YOUR STAY</p>
         <h2>Book Your Stay With Us</h2>
-        <p>
-          Plan your visit and enjoy a comfortable experience at Kamran Guest House.
-        </p>
+        <p>Plan your visit and enjoy a comfortable experience at Kamran Guest House.</p>
 
         <form>
           <label>Full Name</label>
@@ -221,13 +140,11 @@ export default function Home() {
         </form>
       </section>
 
-      {/* Footer */}
+      {/* Compact Footer - No Booking Form Inside */}
       <footer id="contact">
         <div>
           <h3>KAMRAN GUEST HOUSE</h3>
-          <p>
-            Experience comfort, hospitality and relaxation in the heart of Mirpur, AJK.
-          </p>
+          <p>Experience comfort, hospitality and relaxation in the heart of Mirpur, AJK.</p>
         </div>
 
         <div>
@@ -245,7 +162,7 @@ export default function Home() {
           <p>Email: Add your email</p>
         </div>
 
-        <p>© 2026 Kamran Guest House. All Rights Reserved.</p>
+        <p className="copyright">© 2026 Kamran Guest House. All Rights Reserved.</p>
       </footer>
     </>
   );
