@@ -458,8 +458,8 @@ section > p {
 
 .booking form {
   max-width: 600px;
-  margin: 25px auto 0;
-  padding: 25px;
+  margin: 12px auto 0;
+  padding: 16px;
   background: var(--white);
   color: var(--dark);
   text-align: left;
